@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "randomfeatures",
+	"version": "${version}",
+	"name": "Random Features",
+	"description": "Adds A Bunch of Random Stuff.",
+	"authors": [
+		"Conley Carter aka Winver94",
+		"Modding by Kaupenjoe"
+	],
+	"contact": {
+		"homepage": "https://winver94.com/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/randomfeatures/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.winver94.randomfeatures.RandomFeatures"
+		],
+		"fabric-datagen": [
+			"com.winver94.randomfeatures.RandomFeaturesDataGenerator"
+		],
+		"client": [
+			"com.winver94.randomfeatures.RandomFeaturesClient"
+		]
+	},
+	"mixins": [
+		"randomfeatures.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
