@@ -1,5 +1,6 @@
 package com.winver94.randomfeatures;
 
+import com.winver94.randomfeatures.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,5 +12,6 @@ public class RandomFeatures implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItems.registerModItems();
 	}
 }
